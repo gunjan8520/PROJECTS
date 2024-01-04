@@ -1,0 +1,40 @@
+/* Style for the header */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* Change the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for the header */
+  z-index: 1000; /* Ensure the header stays above other elements */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Style for the navigation links */
+.sticky-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sticky-header nav ul li {
+  margin-right: 20px;
+}
+
+.sticky-header nav ul li a {
+  text-decoration: none;
+  color: #333; /* Change the color as needed */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for text color change */
+}
+
+/* Change background color and text color on hover */
+.sticky-header nav ul li a:hover {
+  color: #ff6600; /* Change the text color on hover */
+}
+
+/* JavaScript will add a class for scrolled state */
+.sticky {
+  background-color: #ff6600; /* Change the background color when scrolled */
+  color: #fff; /* Change the text color when scrolled */
+}
